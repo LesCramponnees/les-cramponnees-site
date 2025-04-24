@@ -28,106 +28,109 @@
   AOS.init({ once: true });
 </script>
 
+<!-- Header avec padding mobile réduit -->
 <header class="bg-white shadow-md sticky top-0 z-50" data-aos="fade-down">
-  <div class="max-w-6xl mx-auto flex items-center justify-between px-6 py-4">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">
     <div class="flex items-center gap-4">
-      <img src="logo-placeholder.png" alt="Logo Les Cramponnées" class="h-12 w-auto">
+      <img src="logo-placeholder.png" alt="Logo Les Cramponnées" class="h-10 md:h-12 w-auto">
     </div>
-    <div class="flex-1 text-center">
-      <span class="text-primary font-bold text-2xl">Les Cramponnées</span>
+    <div class="flex-1 text-center text-base md:text-2xl font-bold text-primary">
+      Les Cramponnées
     </div>
-    <nav class="hidden md:flex space-x-8 text-lg">
+    <nav class="hidden md:flex space-x-4 text-sm md:text-lg">
       <a href="#hero" class="text-primary hover:text-primary-dark">Réserver</a>
       <a href="#about" class="text-primary hover:text-primary-dark">À propos</a>
       <a href="#faq" class="text-primary hover:text-primary-dark">FAQ</a>
     </nav>
   </div>
 </header>
-
-<section id="hero" class="text-center md:py-24 py-16 px-6 bg-gray-50">
-  <h1 class="text-5xl font-bold mb-6" data-aos="fade-up">Le soccer à ton rythme.</h1>
-  <p class="text-xl mb-8" data-aos="fade-up" data-aos-delay="100">Des matchs et des entraînements bienveillants pour toutes, peu importe ton niveau.<br>Viens jouer, progresser ou simplement bouger — sans pression, mais toujours avec plaisir.</p>
-  <p class="text-primary font-semibold mb-10 text-lg" data-aos="fade-up" data-aos-delay="200">Matchs « pick-ups » • Entraînements encadrés • Ambiance inclusive et fun</p>
-  <p class="text-lg mt-4 text-gray-700" data-aos="fade-up" data-aos-delay="300">
+<section id="hero" class="text-center py-16 md:py-24 px-4 md:px-6 bg-gray-50">
+  <h1 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-up">Le soccer à ton rythme.</h1>
+  <p class="text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+    Des matchs et des entraînements bienveillants pour toutes, peu importe ton niveau.<br>
+    Viens jouer, progresser ou simplement bouger — sans pression, mais toujours avec plaisir.
+  </p>
+  <p class="text-primary font-semibold mb-6 md:mb-10 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
+    Matchs « pick-ups » • Entraînements encadrés • Ambiance inclusive et fun
+  </p>
+  <p class="text-sm md:text-lg mt-4 text-gray-700" data-aos="fade-up" data-aos-delay="300">
     📅 Tous les <strong>mardis de 19h à 20h</strong> (à partir du <strong>27 mai</strong>)<br>
     📍 <strong>7236 Rue Waverly, Montréal</strong> – Mile-Ex<br>
     🚇 Métros : <strong>De Castelnau</strong> (5 min) et <strong>Jean-Talon</strong> (10 min)<br>
     🚫 <em>Pas de séance le 24 juin (férié au Québec)</em>
   </p>
-  <a href="#pickups" class="inline-block mt-8 bg-primary text-white px-8 py-4 rounded-full text-lg hover:bg-primary-dark transition" data-aos="fade-up" data-aos-delay="400">Je réserve ma place ⚽</a>
+  <a href="#pickups" class="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-full text-sm md:text-lg hover:bg-primary-dark transition" data-aos="fade-up" data-aos-delay="400">
+    Je réserve ma place ⚽
+  </a>
 </section>
-<section id="pickups" class="py-24 px-6 bg-white">
+<section id="pickups" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">Matchs "pick-ups" 5v5</h2>
-    <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Matchs \"pick-ups\" 5v5</h2>
+    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       Des pick-ups de soccer pour jouer sans pression.<br>
       On organise des matchs 5v5 selon les niveaux, pour que tu puisses jouer à ton rythme, quand tu veux.<br>
       Tu t’inscris à la séance. Tu viens. Tu joues. C’est tout.
     </p>
-    <div class="text-left text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
+    <div class="text-left text-sm md:text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
       <p>👉 Matchs ouverts à toutes, organisés par niveau (à venir)</p>
       <p>👉 Terrain extérieur en été à Montréal (Mile-Ex)</p>
       <p>👉 18 $ la séance</p>
     </div>
   </div>
 </section>
-
-<section id="trainings" class="py-24 px-6 bg-gray-50">
+<section id="trainings" class="py-16 md:py-24 px-4 md:px-6 bg-gray-50">
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">Entraînements encadrés</h2>
-    <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Entraînements encadrés</h2>
+    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       Envie de progresser ou de reprendre en douceur?<br>
       Nos entraînements sont pensés pour les joueuses débutantes ou intermédiaires.<br>
       Une coach t’accompagne avec bienveillance sur les bases du jeu, le placement, les passes, le cardio et surtout… le fun.
     </p>
-    <div class="text-left text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
+    <div class="text-left text-sm md:text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
       <p>👉 Petits groupes (max 10 joueuses)</p>
       <p>👉 1 heure d’entraînement</p>
       <p>👉 30 $ la séance</p>
     </div>
   </div>
 </section>
-
-<section id="discovery" class="py-24 px-6">
+<section id="discovery" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">Session Découverte (à venir)</h2>
-    <p class="text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Session Découverte (à venir)</h2>
+    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       Jamais joué? Pas sûre de ton niveau?<br>
       Bientôt, on lance des séances spéciales pour découvrir le jeu à ton rythme,<br>
       entourée d’autres nouvelles joueuses.<br>
       Avec échauffement guidé et coaching pédagogique pour t’accompagner.
     </p>
-    <p class="text-primary font-semibold text-lg" data-aos="fade-up" data-aos-delay="200">🟣 Lancement prévu très bientôt</p>
+    <p class="text-primary font-semibold text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">🟣 Lancement prévu très bientôt</p>
   </div>
 </section>
-<section id="about" class="py-24 px-6 bg-gray-50">
+<section id="about" class="py-16 md:py-24 px-4 md:px-6 bg-gray-50">
   <div class="max-w-3xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6" data-aos="fade-up">À propos de nous</h2>
-    <p class="text-lg mb-8" data-aos="fade-up" data-aos-delay="100">
+    <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">À propos de nous</h2>
+    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       Nous sommes Francesca et Laura.<br>
       Deux joueuses amatrices et passionnées de soccer qui ont eu envie de créer un espace où chaque femme peut jouer, apprendre et progresser peu importe le niveau et l’âge.<br>
       On s’inspire de ce qui se fait ailleurs pour bâtir ici, à Montréal, une vraie communauté autour du soccer féminin.<br>
       Ce projet est un début et tu peux en faire partie.
     </p>
-    <div class="flex justify-center space-x-6 mt-10" data-aos="fade-up" data-aos-delay="200">
-      <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark">
-        <img src="icons8-instagram.svg" alt="Instagram" class="h-6 w-6">
-        Instagram
+    <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:space-x-6 mt-10" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark text-sm md:text-base">
+        <img src="icons8-instagram.svg" alt="Instagram" class="h-6 w-6">Instagram
       </a>
-      <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark">
-        <img src="icons8-facebook.svg" alt="Facebook" class="h-6 w-6">
-        Facebook
+      <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark text-sm md:text-base">
+        <img src="icons8-facebook.svg" alt="Facebook" class="h-6 w-6">Facebook
       </a>
     </div>
-    <p class="mt-6 text-lg" data-aos="fade-up" data-aos-delay="300">
+    <p class="mt-6 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="300">
       Besoin de nous écrire ? <a href="mailto:lescramponnees@gmail.com" class="text-primary font-semibold hover:underline">Contacte-nous par courriel ✉️</a>
     </p>
   </div>
 </section>
-<section id="faq" class="py-24 px-6">
+<section id="faq" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-4xl mx-auto">
-    <h2 class="text-4xl font-bold text-center mb-10" data-aos="fade-up">Questions fréquentes</h2>
-    <div class="space-y-10 text-lg">
+    <h2 class="text-2xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">Questions fréquentes</h2>
+    <div class="space-y-10 text-sm md:text-lg">
       <div data-aos="fade-up" data-aos-delay="100">
         <h3 class="font-semibold mb-2">🔸 Où se situe le terrain?</h3>
         <p>
