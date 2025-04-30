@@ -12,11 +12,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Les Cramponnées</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Les Cramponnées - Soccer féminin à Montréal</title>
+  
+  <!-- SEO et Méta-données -->
+  <meta name="description" content="Les Cramponnées - Collectif de soccer féminin à Montréal. Matchs pick-up et entraînements pour tous les niveaux dans une ambiance bienveillante et inclusive.">
+  <meta property="og:title" content="Les Cramponnées - Soccer féminin à Montréal">
+  <meta property="og:description" content="Matchs pick-up et entraînements pour tous les niveaux dans une ambiance bienveillante et inclusive.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lescramponnees.ca/">
+  
+  <!-- Optimisations techniques -->
+  <link rel="canonical" href="https://lescramponnees.ca/">
+  <meta name="theme-color" content="#800152">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Polices et styles -->
+  <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <style>
     html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
     .bg-primary { background-color: #800152; }
     .text-primary { color: #800152; }
     .hover\:bg-primary-dark:hover { background-color: #6a0144; }
@@ -31,16 +50,43 @@
 <!-- Header avec padding mobile réduit -->
 <header class="bg-white shadow-md sticky top-0 z-50" data-aos="fade-down">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">
-    <a href="index.html" class="text-base md:text-2xl font-bold text-primary hover:text-primary-dark">
+    <a href="index.html" class="text-base md:text-2xl font-bold text-primary hover:text-primary-dark" aria-label="Accueil Les Cramponnées">
       Les Cramponnées
     </a>
-    <nav class="hidden md:flex space-x-4 text-sm md:text-lg">
+    <!-- Navigation desktop -->
+    <nav class="hidden md:flex space-x-4 text-sm md:text-lg" aria-label="Navigation principale">
       <a href="reserver.html" class="text-primary hover:text-primary-dark">Réserver</a>
       <a href="#about" class="text-primary hover:text-primary-dark">À propos</a>
       <a href="#faq" class="text-primary hover:text-primary-dark">FAQ</a>
     </nav>
+    
+    <!-- Menu hamburger pour mobile -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-primary focus:outline-none" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
+
+<!-- Menu mobile -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 md:hidden">
+  <div class="p-4 flex justify-end">
+    <button id="close-menu" class="text-primary focus:outline-none" aria-label="Fermer le menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+  <nav class="flex flex-col items-center space-y-6 text-lg pt-10" aria-label="Navigation mobile">
+    <a href="reserver.html" class="text-primary hover:text-primary-dark">Réserver</a>
+    <a href="#about" class="text-primary hover:text-primary-dark">À propos</a>
+    <a href="#faq" class="text-primary hover:text-primary-dark">FAQ</a>
+  </nav>
+</div>
+
 <section id="hero" class="text-center py-16 md:py-24 px-4 md:px-6 bg-gray-50">
   <h1 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-up">Le soccer à ton rythme.</h1>
   <p class="text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
@@ -56,17 +102,27 @@
     🚇 Métros : <strong>De Castelnau</strong> (5 min) et <strong>Jean-Talon</strong> (10 min)<br>
     🚫 <em>Pas de séance le 24 juin </em>
   </p>
-  <a href="reserver.html" class="inline-block mt-6 bg-primary text-white px-6 py-3 rounded-full text-sm md:text-lg hover:bg-primary-dark transition" data-aos="fade-up" data-aos-delay="400">
+  
+  <!-- Appel à l'action amélioré -->
+  <a href="reserver.html" class="inline-block mt-6 bg-primary text-white px-8 py-4 rounded-full text-base md:text-xl font-bold hover:bg-primary-dark transition transform hover:-translate-y-1 shadow-lg" data-aos="fade-up" data-aos-delay="400" aria-label="Réserver ma place">
     Je réserve ma place ⚽
   </a>
+  
+  <!-- Badges d'inclusivité -->
+  <div class="mt-8 flex justify-center flex-wrap gap-2">
+    <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs" data-aos="fade-up">Espace inclusif</span>
+    <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs" data-aos="fade-up">LGBTQ+ friendly</span>
+    <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs" data-aos="fade-up">Tous niveaux bienvenus</span>
+  </div>
 </section>
+
 <section id="pickups" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Matchs "pick-ups" 6v6</h2>
     <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
-      <strong></bold>Des matchs de soccer loisir pour jouer sans pression.</strong><br>
+      <strong>Des matchs de soccer loisir pour jouer sans pression.</strong><br>
       On organise des matchs 6v6 pour que tu puisses jouer à ton rythme, quand tu veux.<br>
-      Tu t’inscris à la séance. Tu viens. Tu joues. C’est tout.
+      Tu t'inscris à la séance. Tu viens. Tu joues. C'est tout.
     </p>
     <div class="text-left text-sm md:text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
       <p>👉 Matchs ouverts à toutes, organisés par niveau (à venir)</p>
@@ -76,56 +132,60 @@
     </div>
   </div>
 </section>
+
 <section id="trainings" class="py-16 md:py-24 px-4 md:px-6 bg-gray-50">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Entraînements encadrés</h2>
     <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       <strong>Tu as envie de progresser ou de reprendre le jeu?</strong><br>
       Nos entraînements sont pensés pour les joueuses débutantes à intermédiaires (niveaux 1 à 3).<br>
-      Une coach t’accompagne avec bienveillance sur les phases de jeu, le placement, les passes, <br>la technique, le cardio et surtout… le fun.
+      Une coach t'accompagne avec bienveillance sur les phases de jeu, le placement, les passes, <br>la technique, le cardio et surtout… le fun.
     </p>
     <div class="text-left text-sm md:text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
       <p>👉 Petits groupes (max 10 joueuses)</p>
-      <p>👉 1 heure d’entraînement, une semaine sur deux</p>
+      <p>👉 1 heure d'entraînement, une semaine sur deux</p>
       <p>👉 Terrain extérieur avec vue en été dans Montréal</p>
       <p>👉 30 $ la séance</p>
     </div>
   </div>
 </section>
+
 <section id="discovery" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Session « Découverte » (à venir)</h2>
     <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       <strong>Tu n'as jamais joué au soccer mais tu as envie d'essayer?</strong><br>
       Bientôt, on lance des séances spéciales pour découvrir le jeu à ton rythme,<br>
-      entourée d’autres nouvelles joueuses, en toute bienveillance.<br>
-      Avec échauffement guidé et coaching pédagogique pour t’accompagner.
+      entourée d'autres nouvelles joueuses, en toute bienveillance.<br>
+      Avec échauffement guidé et coaching pédagogique pour t'accompagner.
     </p>
     <p class="text-primary font-semibold text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">🟣 Lancement prévu bientôt</p>
   </div>
 </section>
+
 <section id="about" class="py-16 md:py-24 px-4 md:px-6 bg-gray-50">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">À propos de nous</h2>
     <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       <strong>Nous sommes Francesca et Laura.</strong><br>
       Deux joueuses amatrices et passionnées de soccer qui ont eu envie de créer un espace où chaque femme puisse jouer, apprendre et progresser peu importe son niveau et son âge.<br>
-      On s’inspire de ce qui se fait ailleurs pour bâtir ici à Montréal, <br>une vraie communauté autour du soccer féminin.<br>
+      On s'inspire de ce qui se fait ailleurs pour bâtir ici à Montréal, <br>une vraie communauté autour du soccer féminin.<br>
       Ce projet est un début et tu peux en faire partie :
     </p>
     <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:space-x-6 mt-10" data-aos="fade-up" data-aos-delay="200">
-      <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark text-sm md:text-base">
+      <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark text-sm md:text-base" aria-label="Suivez-nous sur Instagram">
         <img src="icons8-instagram.svg" alt="Instagram" class="h-6 w-6">Instagram
       </a>
-      <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark text-sm md:text-base">
+      <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="flex items-center gap-2 text-primary hover:text-primary-dark text-sm md:text-base" aria-label="Rejoignez notre groupe Facebook">
         <img src="icons8-facebook.svg" alt="Facebook" class="h-6 w-6">Facebook
       </a>
     </div>
     <p class="mt-6 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="300">
-      Besoin de nous écrire? <a href="mailto:lescramponnees@gmail.com" class="text-primary font-semibold hover:underline">Contacte-nous par courriel ✉️</a>
+      Besoin de nous écrire? <a href="mailto:lescramponnees@gmail.com" class="text-primary font-semibold hover:underline" aria-label="Nous contacter par email">Contacte-nous par courriel ✉️</a>
     </p>
   </div>
 </section>
+
 <section id="faq" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-4xl mx-auto">
     <h2 class="text-2xl md:text-4xl font-bold text-center mb-10" data-aos="fade-up">Questions fréquentes</h2>
@@ -141,7 +201,7 @@
         </p>
         <div class="mt-6">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2794.8627713984206!2d-73.6202723!3d45.532967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc91932f0bd0c21%3A0xf197237726ce62e5!2sEspaces%20Waverly!5e0!3m2!1sfr!2sca!4v1745510471940!5m2!1sfr!2sca"
-            width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            width="100%" height="300" style="border:0; border-radius: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Carte de l'emplacement du terrain">
           </iframe>
         </div>
       </div>
@@ -152,7 +212,7 @@
       <div data-aos="fade-up" data-aos-delay="200">
         <h3 class="font-semibold mb-2">🔸 Je dois annuler, comment faire?</h3>
         <p>Annule jusqu'à 48h avant la séance pour reporter ta participation. <br>
-          🔺 Aucun report ou remboursement ne sera possible en cas d’annulation moins de 48h avant la séance.</p>
+          🔺 Aucun report ou remboursement ne sera possible en cas d'annulation moins de 48h avant la séance.</p>
       </div>
       <div data-aos="fade-up" data-aos-delay="250">
         <h3 class="font-semibold mb-2">🔸 C'est quoi les niveaux?</h3>
@@ -171,16 +231,35 @@
     </div>
   </div>
 </section>
+
 <footer class="bg-gray-100 py-6 text-center text-sm text-gray-600" data-aos="fade-up">
   <p>© 2025 Les Cramponnées. Tous droits réservés.</p>
   <div class="flex justify-center space-x-6 mt-4">
-    <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="hover:text-primary">
+    <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="hover:text-primary" aria-label="Instagram Les Cramponnées">
       <img src="icons8-instagram.svg" alt="Instagram" class="inline h-6 w-6">
     </a>
-    <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="hover:text-primary">
+    <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="hover:text-primary" aria-label="Groupe Facebook Les Cramponnées">
       <img src="icons8-facebook.svg" alt="Facebook" class="inline h-6 w-6">
     </a>
   </div>
 </footer>
+
+<!-- Script pour le menu mobile -->
+<script>
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.remove('hidden');
+  });
+  
+  document.getElementById('close-menu').addEventListener('click', function() {
+    document.getElementById('mobile-menu').classList.add('hidden');
+  });
+
+  // Fermer le menu mobile si on clique sur un lien
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.add('hidden');
+    });
+  });
+</script>
 </body>
 </html>
