@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page introuvable - Les Cramponnées</title>
+  <meta name="description" content="Oups ! Cette page n'existe pas. Reviens vite jouer avec Les Cramponnées !">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#800152">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#800152',
+            'primary-dark': '#6a0144'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-[#fdf7fa] text-gray-800 flex flex-col justify-center items-center min-h-screen p-6">
+  <div class="text-center">
+    <h1 class="text-6xl font-bold text-primary mb-6">404</h1>
+    <p class="text-xl mb-4">Oups ! Cette page n'existe pas.</p>
+    <p class="text-md text-gray-600 mb-6">Mais bonne nouvelle : tu peux toujours jouer avec nous !</p>
+    <a href="index.html" class="inline-block bg-primary text-white px-6 py-3 rounded-full text-sm font-semibold hover:bg-primary-dark transition" aria-label="Retour à la page d'accueil des Cramponnées">Retour à l'accueil</a>
+  </div>
+</body>
+</html>
