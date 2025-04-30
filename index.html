@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Les Cramponnées - Soccer féminin à Montréal</title>
-  
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHBEVFH61Z"></script>
   <script>
@@ -13,34 +13,47 @@
     gtag('js', new Date());
     gtag('config', 'G-LHBEVFH61Z');
   </script>
-  
+
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-  
-  <!-- SEO et Méta-données -->
+
+  <!-- SEO -->
   <meta name="description" content="Les Cramponnées - Collectif de soccer féminin à Montréal. Matchs pick-up et entraînements pour tous les niveaux dans une ambiance bienveillante et inclusive.">
   <meta property="og:title" content="Les Cramponnées - Soccer féminin à Montréal">
   <meta property="og:description" content="Matchs pick-up et entraînements pour tous les niveaux dans une ambiance bienveillante et inclusive.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lescramponnees.ca/">
-  
-  <!-- Optimisations techniques -->
+
   <link rel="canonical" href="https://lescramponnees.ca/">
   <meta name="theme-color" content="#800152">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  
-  <!-- Polices et styles -->
-  <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+
+  <!-- Tailwind + AOS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#800152',
+            'primary-dark': '#6a0144'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; }
-    .bg-primary { background-color: #800152; }
-    .text-primary { color: #800152; }
-    .hover\:bg-primary-dark:hover { background-color: #6a0144; }
   </style>
 </head>
 <body class="bg-white text-gray-800 font-sans">
@@ -62,33 +75,6 @@
       <a href="#faq" class="text-primary hover:text-primary-dark">FAQ</a>
     </nav>
     
-    <!-- Menu hamburger pour mobile -->
-    <div class="md:hidden">
-      <button id="menu-toggle" class="text-primary focus:outline-none" aria-label="Menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-  </div>
-</header>
-
-<!-- Menu mobile -->
-<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 md:hidden">
-  <div class="p-4 flex justify-end">
-    <button id="close-menu" class="text-primary focus:outline-none" aria-label="Fermer le menu">
-      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-      </svg>
-    </button>
-  </div>
-  <nav class="flex flex-col items-center space-y-6 text-lg pt-10" aria-label="Navigation mobile">
-    <a href="reserver.html" class="text-primary hover:text-primary-dark">Réserver</a>
-    <a href="#about" class="text-primary hover:text-primary-dark">À propos</a>
-    <a href="#faq" class="text-primary hover:text-primary-dark">FAQ</a>
-  </nav>
-</div>
-
 <section id="hero" class="text-center py-16 md:py-24 px-4 md:px-6 bg-gray-50">
   <h1 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-up">Le soccer à ton rythme.</h1>
   <p class="text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
@@ -248,18 +234,17 @@
 
 <!-- Script pour le menu mobile -->
 <script>
-  document.getElementById('menu-toggle').addEventListener('click', function() {
-    document.getElementById('mobile-menu').classList.remove('hidden');
-  });
-  
-  document.getElementById('close-menu').addEventListener('click', function() {
-    document.getElementById('mobile-menu').classList.add('hidden');
+  document.getElementById('menu-toggle')?.addEventListener('click', function() {
+    document.getElementById('mobile-menu')?.classList.remove('hidden');
   });
 
-  // Fermer le menu mobile si on clique sur un lien
+  document.getElementById('close-menu')?.addEventListener('click', function() {
+    document.getElementById('mobile-menu')?.classList.add('hidden');
+  });
+
   document.querySelectorAll('#mobile-menu a').forEach(function(link) {
     link.addEventListener('click', function() {
-      document.getElementById('mobile-menu').classList.add('hidden');
+      document.getElementById('mobile-menu')?.classList.add('hidden');
     });
   });
 </script>
