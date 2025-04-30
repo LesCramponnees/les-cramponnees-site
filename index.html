@@ -230,18 +230,21 @@
   </div>
 </footer>
 
+<!-- Script pour le menu mobile -->
 <script>
-  const toggle = document.getElementById('menu-toggle');
-  const menu = document.getElementById('mobile-menu');
-  const close = document.getElementById('close-menu');
+  document.getElementById('menu-toggle')?.addEventListener('click', function() {
+    document.getElementById('mobile-menu')?.classList.remove('hidden');
+  });
 
-  if (toggle && menu && close) {
-    toggle.addEventListener('click', () => menu.classList.remove('hidden'));
-    close.addEventListener('click', () => menu.classList.add('hidden'));
-    document.querySelectorAll('#mobile-menu a').forEach(link => {
-      link.addEventListener('click', () => menu.classList.add('hidden'));
+  document.getElementById('close-menu')?.addEventListener('click', function() {
+    document.getElementById('mobile-menu')?.classList.add('hidden');
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.add('hidden');
     });
-  }
+  });
 </script>
 
 </body>
