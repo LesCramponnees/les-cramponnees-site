@@ -1,38 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LHBEVFH61Z"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-LHBEVFH61Z');
-</script>
-<link rel="icon" type="image/x-icon" href="favicon.ico">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Réserver ta place - Les Cramponnées</title>
-  
-  <!-- SEO et Méta-données -->
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHBEVFH61Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LHBEVFH61Z');
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- SEO -->
   <meta name="description" content="Réserve ta session de soccer avec Les Cramponnées : matchs pick-up 6v6 et entraînements techniques à Montréal. Places limitées.">
   <meta property="og:title" content="Réserver ta place - Les Cramponnées">
   <meta property="og:description" content="Réserve ta session de soccer avec Les Cramponnées : matchs pick-up 6v6 et entraînements techniques à Montréal.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lescramponnees.ca/reserver.html">
-  
-  <!-- Optimisations techniques -->
+
   <link rel="canonical" href="https://lescramponnees.ca/reserver.html">
   <meta name="theme-color" content="#800152">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  
-  <!-- Polices et styles -->
-  <link href="https://cdn.tailwindcss.com/2.2.19/tailwind.min.css" rel="stylesheet">
+
+  <!-- Tailwind + AOS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#800152',
+            'primary-dark': '#6a0144'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; }
@@ -58,20 +76,16 @@
   AOS.init({ once: true });
 </script>
 
-<!-- HEADER -->
 <header class="bg-white shadow-md sticky top-0 z-50" data-aos="fade-down">
   <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">
     <a href="index.html" class="text-base md:text-2xl font-bold text-primary hover:text-primary-dark" aria-label="Accueil Les Cramponnées">
       Les Cramponnées
     </a>
-    <!-- Navigation desktop -->
     <nav class="hidden md:flex space-x-4 text-sm md:text-lg" aria-label="Navigation principale">
       <a href="reserver.html" class="text-primary hover:text-primary-dark font-semibold">Réserver</a>
       <a href="index.html#about" class="text-primary hover:text-primary-dark">À propos</a>
       <a href="index.html#faq" class="text-primary hover:text-primary-dark">FAQ</a>
     </nav>
-    
-    <!-- Menu hamburger pour mobile -->
     <div class="md:hidden">
       <button id="menu-toggle" class="text-primary focus:outline-none" aria-label="Menu">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -82,7 +96,6 @@
   </div>
 </header>
 
-<!-- Menu mobile -->
 <div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 md:hidden">
   <div class="p-4 flex justify-end">
     <button id="close-menu" class="text-primary focus:outline-none" aria-label="Fermer le menu">
@@ -98,12 +111,10 @@
   </nav>
 </div>
 
-<!-- SECTION HERO -->
 <section class="bg-primary text-white flex items-center justify-center text-center min-h-[200px]" data-aos="fade-up">
   <h1 class="text-3xl md:text-4xl font-bold">Réserve ta place ⚽</h1>
 </section>
 
-<!-- MAIN CONTENT -->
 <main class="max-w-5xl mx-auto p-6">
   <section class="text-center mb-8" data-aos="fade-up" data-aos-delay="100">
     <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">Choisis ta session :</h2>
@@ -111,18 +122,44 @@
       ⚡ Places limitées : 16 participantes pour les matchs, 10 pour les entraînements.<br>
       ➔ Après ta réservation, tu recevras un courriel avec les instructions pour finaliser ton inscription par virement Interac.
     </p>
-    
-    <!-- Badges d'inclusivité -->
     <div class="flex justify-center flex-wrap gap-2 mb-6">
       <span class="inline-block bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs" data-aos="fade-up">Espace inclusif</span>
       <span class="inline-block bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs" data-aos="fade-up">LGBTQ+ friendly</span>
       <span class="inline-block bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs" data-aos="fade-up">Tous niveaux bienvenus</span>
     </div>
   </section>
-  
-  <!-- Calendly Embed -->
+
   <div class="calendly-inline-widget" data-url="https://calendly.com/lescramponnees?hide_landing_page_details=1&hide_gdpr_banner=1&primary_color=800152" style="min-width:400px;height:550px;" title="Calendrier de réservation Les Cramponnées"></div>
   <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-  
-  <!-- BOUTON RETOUR -->
-  <div class="text
+</main>
+
+<footer class="bg-gray-100 py-6 text-center text-sm text-gray-600" data-aos="fade-up">
+  <p>© 2025 Les Cramponnées. Tous droits réservés.</p>
+  <div class="flex justify-center gap-6 mt-4">
+    <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="hover:text-primary" aria-label="Instagram Les Cramponnées">
+      <img src="icons8-instagram.svg" alt="Instagram" class="inline h-6 w-6">
+    </a>
+    <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="hover:text-primary" aria-label="Groupe Facebook Les Cramponnées">
+      <img src="icons8-facebook.svg" alt="Facebook" class="inline h-6 w-6">
+    </a>
+  </div>
+</footer>
+
+<!-- Script pour le menu mobile -->
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', function() {
+    document.getElementById('mobile-menu')?.classList.remove('hidden');
+  });
+
+  document.getElementById('close-menu')?.addEventListener('click', function() {
+    document.getElementById('mobile-menu')?.classList.add('hidden');
+  });
+
+  document.querySelectorAll('#mobile-menu a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      document.getElementById('mobile-menu')?.classList.add('hidden');
+    });
+  });
+</script>
+</body>
+</html>
