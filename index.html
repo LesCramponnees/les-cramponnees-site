@@ -66,6 +66,14 @@
       line-height: 1.5;
       font-size: clamp(1rem, 2vw, 1.25rem);
     }
+    .br-mobile {
+      display: none;
+    }
+    @media (max-width: 768px) {
+      .br-mobile {
+        display: inline;
+      }
+    }
   </style>
 </head>
   
@@ -159,8 +167,7 @@
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">
       Entraînements encadrés
     </h2>
-    
-    <p class="responsive-text text-sm md:text-lg mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+    <p class="responsive-text text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       <strong>Tu as envie de progresser ou de reprendre le jeu ?</strong><br>
       Nos entraînements sont pensés pour les joueuses débutantes à intermédiaires.
       Une coach t’accompagne avec bienveillance sur les phases de jeu, le placement, les passes, la technique, le cardio… et surtout, le plaisir de jouer.
@@ -188,7 +195,7 @@
 <section id="discovery" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Session découverte (à venir)</h2>
-    <p class="responsive-text text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+    <p class="responsive-text text-base md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       <strong>Tu n'as jamais joué au soccer mais tu as envie d'essayer?</strong><br>
       Bientôt, on lance des séances spéciales pour découvrir le jeu à ton rythme,
       entourée d'autres nouvelles joueuses, en toute bienveillance.
@@ -201,7 +208,7 @@
 <section id="about" class="py-16 md:py-24 px-4 md:px-6 bg-secondary-light">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">À propos de nous</h2>
-    <p class="responsive-text text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+    <p class="responsive-text text-base md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
       <strong>Nous sommes un collectif de joueuses amatrices passionnées,</strong><br>
       réuni·es par l’envie de créer un espace où chaque femme peut jouer, apprendre et progresser, peu importe l’âge ou le niveau.<br> Un endroit où on vient comme on est, 
       sans pression, juste pour le plaisir de bouger, de se dépasser et de partager des bons moments.<br> On s’inspire de ce qui existe ailleurs, mais on construit ici, à Montréal,
