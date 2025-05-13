@@ -39,9 +39,12 @@
             'primary-dark': '#6a0144',
             secondary: '#f2d16d',
             'secondary-light': '#FFFDF9',
-            },
+          },
           fontFamily: {
             sans: ['Inter', 'sans-serif']
+          },
+          fontSize: {
+            responsive: 'clamp(1rem, 2vw, 1.25rem)'
           }
         }
       }
@@ -56,8 +59,16 @@
   <style>
     html { scroll-behavior: smooth; }
     body { font-family: 'Inter', sans-serif; }
+    .responsive-text {
+      word-break: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+      line-height: 1.5;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
   </style>
 </head>
+  
 <body class="bg-white text-gray-800 font-sans">
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
@@ -103,8 +114,8 @@
 
 <section id="hero" class="text-center py-16 md:py-24 px-4 md:px-6 bg-secondary-light">
   <h1 class="text-3xl md:text-5xl font-bold mb-6" data-aos="fade-up">Le soccer à ton rythme.</h1>
-  <p class="text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
-    Des matchs et des entraînements bienveillants pour toutes, quel que soit ton niveau.<br>
+  <p class="responsive-text text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+    Des matchs et des entraînements bienveillants pour toutes, quel que soit ton niveau.
     Viens jouer, progresser ou simplement bouger en t'inscrivant « à la carte » selon tes disponibilités.
   </p>
   <p class="text-primary font-semibold mb-6 md:mb-10 text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">
@@ -129,9 +140,9 @@
 <section id="pickups" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Matchs "pick-up" 6v6</h2>
-    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
-      <strong>Des matchs de soccer loisir pour jouer sans pression.</strong><br>
-      On organise des matchs 6v6 pour que tu puisses jouer à ton rythme, quand tu veux.<br>
+    <p class="responsive-text text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+      <strong>Des matchs de soccer loisir pour jouer sans pression.</strong>
+      On organise des matchs 6v6 pour que tu puisses jouer à ton rythme, quand tu veux.
       Tu t'inscris à la séance. Tu viens. Tu joues. C'est tout.
     </p>
     <div class="text-left text-sm md:text-lg mb-8 space-y-2" data-aos="fade-up" data-aos-delay="200">
@@ -149,10 +160,10 @@
       Entraînements encadrés
     </h2>
     
-    <p class="text-sm md:text-lg mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
-      <strong>Tu as envie de progresser ou de reprendre le jeu ?</strong><br>
-      Nos entraînements sont pensés pour les joueuses débutantes à intermédiaires.<br>
-      Une coach t’accompagne avec bienveillance sur les phases de jeu, le placement, <br>les passes, la technique, le cardio… et surtout, le plaisir de jouer.
+    <p class="responsive-text text-sm md:text-lg mb-6 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+      <strong>Tu as envie de progresser ou de reprendre le jeu ?</strong>
+      Nos entraînements sont pensés pour les joueuses débutantes à intermédiaires.
+      Une coach t’accompagne avec bienveillance sur les phases de jeu, le placement, les passes, la technique, le cardio… et surtout, le plaisir de jouer.
     </p>
 
     <div class="text-left text-sm md:text-lg mb-8 space-y-4" data-aos="fade-up" data-aos-delay="200">
@@ -177,10 +188,10 @@
 <section id="discovery" class="py-16 md:py-24 px-4 md:px-6">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">Session découverte (à venir)</h2>
-    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
-      <strong>Tu n'as jamais joué au soccer mais tu as envie d'essayer?</strong><br>
-      Bientôt, on lance des séances spéciales pour découvrir le jeu à ton rythme,<br>
-      entourée d'autres nouvelles joueuses, en toute bienveillance.<br>
+    <p class="responsive-text text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+      <strong>Tu n'as jamais joué au soccer mais tu as envie d'essayer?</strong>
+      Bientôt, on lance des séances spéciales pour découvrir le jeu à ton rythme,
+      entourée d'autres nouvelles joueuses, en toute bienveillance.
       Avec échauffement guidé et coaching pédagogique pour t'accompagner.
     </p>
     <p class="text-primary font-semibold text-sm md:text-lg" data-aos="fade-up" data-aos-delay="200">🟣 Lancement prévu bientôt</p>
@@ -190,11 +201,11 @@
 <section id="about" class="py-16 md:py-24 px-4 md:px-6 bg-secondary-light">
   <div class="max-w-3xl mx-auto text-center">
     <h2 class="text-2xl md:text-4xl font-bold mb-6" data-aos="fade-up">À propos de nous</h2>
-    <p class="text-sm md:text-lg mb-6" data-aos="fade-up" data-aos-delay="100">
-      <strong>Nous sommes un collectif de joueuses amatrices passionnées,</strong><br>
-      réuni·es par l’envie de créer un espace où chaque femme peut jouer, apprendre <br>et progresser, peu importe l’âge ou le niveau. Un endroit où on vient comme on est,<br> 
-      sans pression, juste pour le plaisir de bouger, de se dépasser et de partager des bons moments. On s’inspire de ce qui existe ailleurs, mais on construit ici, à Montréal, <br>
-      une communauté qui nous ressemble : inclusive, bienveillante et pleine d’énergie.<br>
+    <p class="responsive-text text-base md:text-xl mb-6" data-aos="fade-up" data-aos-delay="100">
+      <strong>Nous sommes un collectif de joueuses amatrices passionnées,</strong>
+      réuni·es par l’envie de créer un espace où chaque femme peut jouer, apprendre et progresser, peu importe l’âge ou le niveau. Un endroit où on vient comme on est, 
+      sans pression, juste pour le plaisir de bouger, de se dépasser et de partager des bons moments. On s’inspire de ce qui existe ailleurs, mais on construit ici, à Montréal,
+      une communauté qui nous ressemble : inclusive, bienveillante et pleine d’énergie.
       Ce projet est un début et tu peux en faire partie :
     </p>
     <div class="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6 mt-10" data-aos="fade-up" data-aos-delay="200">
