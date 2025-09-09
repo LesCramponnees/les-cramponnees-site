@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité - Les Cramponnées</title>
+
+  <!-- Google tag -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LHBEVFH61Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LHBEVFH61Z');
+  </script>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- SEO -->
+  <meta name="description" content="Politique de confidentialité et politique de gestion des fichiers témoins des Cramponnées.">
+  <link rel="canonical" href="https://lescramponnees.ca/politique-de-confidentialite.html">
+
+  <!-- Tailwind + AOS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; }
+    .responsive-text {
+      word-break: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
+      line-height: 1.5;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
+  </style>
+
+  <!-- Bannière cookies -->
+  <script type="text/javascript" charset="UTF-8" src="//cdn.cookie-script.com/s/fedb413f0cd552720567a24c2020c1b8.js"></script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans">
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ once: true });</script>
+
+<!-- Header -->
+<header class="bg-white shadow-md sticky top-0 z-50" data-aos="fade-down">
+  <div class="max-w-6xl mx-auto flex items-center justify-between px-4 md:px-6 py-4">
+    <a href="index.html" class="flex items-center" aria-label="Accueil Les Cramponnées">
+      <img src="logo-les-cramponnees.png" alt="Les Cramponnées"
+        class="h-14 md:h-16 w-auto hover:opacity-90 transition"/>
+    </a>
+    <nav class="hidden md:flex items-center space-x-4 text-sm md:text-lg" aria-label="Navigation principale">
+      <a href="reserver.html" class="bg-primary text-white px-4 py-2 rounded-full font-semibold hover:bg-primary-dark transition">Réserver</a>
+      <a href="index.html#about" class="text-primary hover:text-primary-dark py-2">À propos</a>
+      <a href="index.html#faq" class="text-primary hover:text-primary-dark py-2">FAQ</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-primary focus:outline-none" aria-label="Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Menu mobile -->
+<div id="mobile-menu" class="hidden fixed inset-0 bg-white z-50 md:hidden">
+  <div class="p-4 flex justify-end">
+    <button id="close-menu" class="text-primary focus:outline-none" aria-label="Fermer le menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  <nav class="flex flex-col items-center space-y-6 text-lg pt-10">
+    <a href="reserver.html" class="bg-primary text-white px-6 py-2 rounded-full font-semibold hover:bg-primary-dark transition">Réserver</a>
+    <a href="index.html#about" class="text-primary hover:text-primary-dark">À propos</a>
+    <a href="index.html#faq" class="text-primary hover:text-primary-dark">FAQ</a>
+  </nav>
+</div>
+
+<!-- Politique de confidentialité -->
+<main class="max-w-5xl mx-auto px-4 md:px-6 py-16 md:py-24">
+  <h1 class="text-3xl md:text-5xl font-bold mb-8 text-center text-primary" data-aos="fade-up">
+    Politique de confidentialité
+  </h1>
+
+  <article class="prose prose-lg max-w-none text-justify responsive-text" data-aos="fade-up" data-aos-delay="100">
+<h2 class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6 underline" data-aos="fade-up">
+POLITIQUE DE CONFIDENTIALITÉ
+</h2>
+<p class="italic">English will follow.</p>
+
+<p class="italic">Date d'effet : 9 septembre 2025</p>
+
+Cette politique de confidentialité décrit les politiques de Les Cramponnées, Montréal, QC H2K 0A8, Canada concernant la collecte, l'utilisation et la divulgation de vos informations que nous recueillons lorsque vous utilisez notre site Web (https://lesdentistesduvieuxport.com) (le "Service"). En accédant ou en utilisant le Service, vous consentez à la collecte, à l'utilisation et à la divulgation de vos informations conformément à cette politique de confidentialité. Si vous ne consentez pas à cela, veuillez ne pas accéder ou utiliser le Service.
+
+Nous pouvons modifier cette politique de confidentialité à tout moment sans préavis préalable et publierons la politique de confidentialité révisée sur le Service. La politique révisée entrera en vigueur 180 jours après sa publication sur le Service, et votre accès ou votre utilisation continue du Service après cette période constituera votre acceptation de la politique de confidentialité révisée. Nous vous recommandons donc de consulter régulièrement cette page.
+
+<strong><u>Comment nous utilisons vos informations :</strong></u>
+Nous utiliserons les informations que nous recueillons vous concernant aux fins suivantes :
+
+Marketing/ Promotionnel
+Publicité ciblée
+
+Si nous souhaitons utiliser vos informations à toute autre fin, nous vous demanderons votre consentement et n'utiliserons vos informations qu'après avoir obtenu votre consentement, et ce, uniquement aux fins pour lesquelles vous avez donné votre consentement, sauf si la loi l'exige.
+
+<strong><u>Comment nous partageons vos informations :</strong></u>
+Nous ne transférerons pas vos informations personnelles à des tiers sans obtenir votre consentement, sauf dans des circonstances limitées telles que décrites ci-dessous :
+
+Service de publicité
+Analytique
+Collecte et traitement des données
+
+Nous demandons à ces tiers d'utiliser les informations personnelles que nous leur transmettons uniquement dans le but pour lequel elles ont été transmises et de ne pas les conserver plus longtemps que nécessaire pour remplir ledit but. Nous pouvons également divulguer vos informations personnelles dans les cas suivants : (1) pour se conformer à la loi, à la réglementation, à une ordonnance du tribunal ou à tout autre processus légal ; (2) pour faire respecter vos accords avec nous, y compris cette politique de confidentialité ; ou (3) pour répondre à des réclamations selon lesquelles votre utilisation du Service viole les droits de tiers. Si le Service ou notre entreprise est fusionné ou acquis par une autre entreprise, vos informations seront l'un des actifs transférés au nouveau propriétaire.
+
+<strong><u>Vos droits :</strong></u>
+En fonction de la loi applicable, vous pouvez avoir le droit d'accéder à vos données personnelles, de les rectifier ou de les effacer, de recevoir une copie de vos données personnelles, de restreindre ou de vous opposer au traitement actif de vos données, de nous demander de partager (porter) vos informations personnelles avec une autre entité, de retirer tout consentement que vous nous avez donné pour le traitement de vos données, le droit de déposer une plainte auprès d'une autorité compétente et d'autres droits pertinents en vertu des lois applicables. Pour exercer ces droits, vous pouvez nous écrire à l'adresse lescramponnees@gmail.com. Nous répondrons à votre demande conformément à la loi applicable. Notez que si vous ne nous permettez pas de collecter ou de traiter les informations personnelles requises ou si vous retirez votre consentement pour le traitement aux fins requises, vous risquez de ne pas pouvoir accéder ou utiliser les services pour lesquels vos informations étaient recherchées.
+
+<h3 class="text-xl md:text-2xl font-semibold text-gray-800 mt-8 mb-4" data-aos="fade-up" data-aos-delay="100">
+Politique de gestion des fichiers témoins
+</h3>
+
+<strong><u>Que sont les fichiers témoins ?</strong></u>
+Cette politique de témoins explique ce que sont les témoins et comment nous les utilisons, les types de témoins que nous utilisons, c'est-à-dire les informations que nous collectons à l'aide des témoins et comment ces informations sont utilisées, ainsi que la manière de gérer les paramètres des témoins.
+Les témoins sont de petits fichiers texte utilisés pour stocker de petites informations. Ils sont stockés sur votre appareil lorsque le site Web est chargé dans votre navigateur. Ces témoins nous aident à faire fonctionner correctement le site Web, à le rendre plus sûr, à offrir une meilleure expérience utilisateur, à comprendre comment le site Web fonctionne et à analyser ce qui fonctionne et ce qui doit être amélioré.
+
+<strong><u>Comment utilisons-nous les témoins ?</strong></u>
+Comme la plupart des services en ligne, notre site Web utilise des témoins de première partie et des témoins tiers à plusieurs fins. Les témoins de première partie sont principalement nécessaires au bon fonctionnement du site Web, et ils ne collectent aucune de vos données personnelles identifiables.
+Les témoins tiers utilisés sur notre site Web servent principalement à comprendre comment le site Web fonctionne, comment vous interagissez avec notre site Web, à assurer la sécurité de nos services, à fournir des publicités pertinentes pour vous, et en général à vous offrir une expérience utilisateur meilleure et améliorée, tout en accélérant vos futures interactions avec notre site Web.
+
+<strong><u>Types de témoins que nous utilisons :</strong></u>
+ 	 	 	 	 	 
+<!-- Témoins strictement nécessaires -->
+<div class="overflow-x-auto my-8" data-aos="fade-up">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4 underline">Témoins strictement nécessaires</h2>
+  <table class="min-w-full border border-gray-300 text-sm md:text-base">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Domaine</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Path</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie type</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Expiration</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-300 px-3 py-2">__cf_bm</td>
+        <td class="border border-gray-300 px-3 py-2">.calendly.com</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Tiers</td>
+        <td class="border border-gray-300 px-3 py-2">29 minutes 57 secondes</td>
+        <td class="border border-gray-300 px-3 py-2">
+          Ce cookie est utilisé pour faire la distinction entre les humains et les robots. 
+          Ceci est bénéfique pour le site Web, afin de faire des rapports valides sur l'utilisation de leur site Web.
+        </td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="border border-gray-300 px-3 py-2">__cfruid</td>
+        <td class="border border-gray-300 px-3 py-2">.calendly.com</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Tiers</td>
+        <td class="border border-gray-300 px-3 py-2">Session</td>
+        <td class="border border-gray-300 px-3 py-2">
+          Cookie associé aux sites utilisant CloudFlare, utilisé pour identifier le trafic Web de confiance.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Témoins de performance -->
+<div class="overflow-x-auto my-8" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4 underline">Témoins de performance</h2>
+  <table class="min-w-full border border-gray-300 text-sm md:text-base">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Domaine</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Path</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie type</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Expiration</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-300 px-3 py-2">_ga_LHBEVFH61Z</td>
+        <td class="border border-gray-300 px-3 py-2">Lescramponnees.ca</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Interne</td>
+        <td class="border border-gray-300 px-3 py-2">1 an 1 mois</td>
+        <td class="border border-gray-300 px-3 py-2">
+          Ce cookie est utilisé par Google Analytics pour conserver l'état de la session.
+        </td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="border border-gray-300 px-3 py-2">_ga</td>
+        <td class="border border-gray-300 px-3 py-2">Lescramponnees.ca</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Interne</td>
+        <td class="border border-gray-300 px-3 py-2">1 an 1 mois</td>
+        <td class="border border-gray-300 px-3 py-2">
+          Ce nom de cookie est associé à Google Universal Analytics - qui est une mise à jour importante du service d'analyse le plus couramment utilisé de Google. 
+          Ce cookie est utilisé pour distinguer les utilisateurs uniques en attribuant un numéro généré aléatoirement comme identifiant client. 
+          Il est inclus dans chaque demande de page d'un site et utilisé pour calculer les données de visiteur, de session et de campagne pour les rapports d'analyse du site.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Témoins de fonctionnalité -->
+<div class="overflow-x-auto my-8" data-aos="fade-up" data-aos-delay="200">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4 underline">Témoins de fonctionnalité</h2>
+  <table class="min-w-full border border-gray-300 text-sm md:text-base">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Domaine</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Path</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie type</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Expiration</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-300 px-3 py-2">_cfuvid</td>
+        <td class="border border-gray-300 px-3 py-2">.calendly.com</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Tiers</td>
+        <td class="border border-gray-300 px-3 py-2">Session</td>
+        <td class="border border-gray-300 px-3 py-2">
+          Ce cookie est utilisé pour suivre les utilisateurs à travers les sessions afin d'optimiser l'expérience utilisateur 
+          en maintenant la cohérence des sessions et en fournissant des services personnalisés.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<strong><u>Vos choix en matière de témoins :</strong></u>
+Vous avez certaines options en ce qui concerne le placement de témoins sur votre appareil. Vous pouvez choisir d'accepter ou de refuser les témoins fonctionnels ou publicitaires. Vous pouvez contrôler vos choix en matière de témoins via votre navigateur, où vous pouvez lui donner l'instruction de supprimer ou de refuser les témoins. Vous pouvez consulter le centre d'aide de votre navigateur, les pages "Outils", "Modifier" ou "Aide" pour définir vos préférences en matière de témoins et supprimer les témoins. Nous vous encourageons également à visiter aboutcookies.org pour en savoir plus sur la manière de refuser les témoins.
+
+<strong><u>Questions :</strong></u>
+Si vous avez des questions concernant cette politique de témoins, veuillez nous contacter à lescramponnees@gmail.com.
+
+<strong><u>Sécurité :</strong></u>
+La sécurité de vos informations nous tient à cœur, et nous utiliserons des mesures de sécurité raisonnables pour éviter la perte, l'abus ou la modification non autorisée de vos informations sous notre contrôle. Cependant, compte tenu des risques inhérents, nous ne pouvons garantir une sécurité absolue et, par conséquent, nous ne pouvons assurer ni garantir la sécurité de toutes les informations que vous nous transmettez, et vous le faites à vos propres risques.
+
+<strong><u>Liens tiers et utilisation de vos informations :</strong></u>
+Notre Service peut contenir des liens vers d'autres sites Web qui ne sont pas exploités par nous. Cette politique de confidentialité ne concerne pas la politique de confidentialité et les autres pratiques de tiers, y compris tout tiers exploitant un site Web ou un service accessible via un lien sur le Service. Nous vous recommandons vivement de consulter la politique de confidentialité de chaque site que vous visitez. Nous n'avons aucun contrôle sur le contenu, les politiques de confidentialité ou les pratiques de tiers en matière de sites ou de services tiers.
+
+<strong><u>Réclamation / Délégué à la protection des données :</strong></u>
+Le délégué à la protection des données désigné pour Les Cramponnées (OBNL) est Laura Mari. Si vous souhaitez que nous supprimions ou corrigions des informations personnelles spécifiques ou que vous signaliez un incident lié à la confidentialité, veuillez les contacter par courriel à lescramponnees@gmail.com.
+
+
+<h2 class="text-2xl md:text-3xl font-bold text-primary mt-12 mb-6 underline" data-aos="fade-up">
+PRIVACY POLICY
+</h2>
+
+<p class="italic">Effective Date 9-sept-2025</p>
+ 
+This Privacy Policy describes the policies of Les Cramponnées, Montréal, QC H2K 0A8, Canada on the collection, use and disclosure of your information that we collect when you use our website (https://lescramponnees.ca). (the “Service”). By accessing or using the Service, you are consenting to the collection, use and disclosure of your information in accordance with this Privacy Policy. If you do not consent to the same, please do not access or use the Service. 
+We may modify this Privacy Policy at any time without any prior notice to you and will post the revised Privacy Policy on the Service. The revised Policy will be effective 180 days from when the revised Policy is posted in the Service and your continued access or use of the Service after such time will constitute your acceptance of the revised Privacy Policy. We therefore recommend that you periodically review this page. 
+ 
+<strong><u>How We Use Your Information:</strong></u>
+We will use the information that we collect about you for the following purposes: 
+ 
+Marketing/ Promotional
+Targeted advertising
+If we want to use your information for any other purpose, we will ask you for consent and will use your information only on receiving your consent and then, only for the purpose(s) for which grant consent unless we are required to do otherwise by law. 
+ 
+<strong><u>How We Share Your Information:</strong></u>
+We will not transfer your personal information to any third party without seeking your consent, except in limited circumstances as described below: 
+ 
+•	Ad service
+•	Analytics
+•	Data collection & process
+
+We require such third party’s to use the personal information we transfer to them only for the purpose for which it was transferred and not to retain it for longer than is required for fulfilling the said purpose. 
+We may also disclose your personal information for the following: (1) to comply with applicable law, regulation, court order or other legal process; (2) to enforce your agreements with us, including this Privacy Policy; or (3) to respond to claims that your use of the Service violates any third-party rights. If the Service or our company is merged or acquired with another company, your information will be one of the assets that is transferred to the new owner. 
+ 
+<strong><u>Your Rights:</strong></u>
+Depending on the law that applies, you may have a right to access and rectify or erase your personal data or receive a copy of your personal data, restrict or object to the active processing of your data, ask us to share (port) your personal information to another entity, withdraw any consent you provided to us to process your data, a right to lodge a complaint with a statutory authority and such other rights as may be relevant under applicable laws. To exercise these rights, you can write to us at lescramponnees@gmail.com. We will respond to your request in accordance with applicable law. 
+Do note that if you do not allow us to collect or process the required personal information or withdraw the consent to process the same for the required purposes, you may not be able to access or use the services for which your information was sought. 
+
+<h3 class="text-xl md:text-2xl font-semibold text-gray-800 mt-8 mb-4" data-aos="fade-up" data-aos-delay="100">
+Cookie Policy
+</h3>
+
+<strong><u>What are cookies?</strong></u>
+This Cookie Policy explains what cookies are and how we use them, the types of cookies we use i.e, the information we collect using cookies and how that information is used, and how to manage the cookie settings.
+Cookies are small text files that are used to store small pieces of information. They are stored on your device when the website is loaded on your browser. These cookies help us make the website function properly, make it more secure, provide better user experience, and understand how the website performs and to analyze what works and where it needs improvement.
+
+<strong><u>How do we use cookies?</strong></u>
+As most of the online services, our website uses first-party and third-party cookies for several purposes. First-party cookies are mostly necessary for the website to function the right way, and they do not collect any of your personally identifiable data.
+
+The third-party cookies used on our website are mainly for understanding how the website performs, how you interact with our website, keeping our services secure, providing advertisements that are relevant to you, and all in all providing you with a better and improved user experience and help speed up your future interactions with our website.
+ 
+<strong><u>Types of Cookies we use:</strong></u>
+
+<!-- Tableau cookies -->
+<div class="overflow-x-auto my-8" data-aos="fade-up">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">Strictly Necessary Cookies</h2>
+  <table class="min-w-full border border-gray-300 text-sm md:text-base">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie key</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Domain</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Path</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie type</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Expiration</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-300 px-3 py-2">__cf_bm</td>
+        <td class="border border-gray-300 px-3 py-2">.calendly.com</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Third-party</td>
+        <td class="border border-gray-300 px-3 py-2">29 minutes 57 seconds</td>
+        <td class="border border-gray-300 px-3 py-2">
+          This cookie is used to distinguish between humans and bots. 
+          This is beneficial for the website in order to generate valid reports on the use of the site.
+        </td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="border border-gray-300 px-3 py-2">__cfruid</td>
+        <td class="border border-gray-300 px-3 py-2">.calendly.com</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">Third-party</td>
+        <td class="border border-gray-300 px-3 py-2">Session</td>
+        <td class="border border-gray-300 px-3 py-2">
+          Cookie associated with sites using CloudFlare, used to identify trusted web traffic.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Deuxième tableau -->
+<div class="overflow-x-auto my-8" data-aos="fade-up" data-aos-delay="100">
+  <h2 class="text-2xl md:text-3xl font-bold text-primary mb-4">Performance Cookies</h2>
+  <table class="min-w-full border border-gray-300 text-sm md:text-base">
+    <thead class="bg-gray-100">
+      <tr>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie key</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Domain</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Path</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Cookie type</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Expiration</th>
+        <th class="border border-gray-300 px-3 py-2 text-left">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-gray-300 px-3 py-2">_ga_LHBEVFH61Z</td>
+        <td class="border border-gray-300 px-3 py-2">Lescramponnees.ca</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">First-party</td>
+        <td class="border border-gray-300 px-3 py-2">1 year 1 month</td>
+        <td class="border border-gray-300 px-3 py-2">
+          This cookie is used by Google Analytics to persist session state.
+        </td>
+      </tr>
+      <tr class="bg-gray-50">
+        <td class="border border-gray-300 px-3 py-2">_ga</td>
+        <td class="border border-gray-300 px-3 py-2">Lescramponnees.ca</td>
+        <td class="border border-gray-300 px-3 py-2">/</td>
+        <td class="border border-gray-300 px-3 py-2">First-party</td>
+        <td class="border border-gray-300 px-3 py-2">1 year 1 month</td>
+        <td class="border border-gray-300 px-3 py-2">
+          This cookie name is associated with Google Universal Analytics — which is a significant update to Google’s most widely used analytics service. 
+          This cookie is used to distinguish unique users by assigning a randomly generated number as a client identifier. 
+          It is included in every page request on a site and is used to calculate visitor, session, and campaign data for the site’s analytics reports.
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<strong><u>Your choices regarding cookies</strong></u>
+You have certain choices when it comes to the placing of cookies on your device. You may choose to accept or deny any functional or marketing cookies. You can control your cookie choices through your browser, where you can instruct it to delete or refuse cookies. You can visit the help center of your browser, the "Tools", "Edit", or "Help" pages to set your cookie preferences and delete cookies. We also encourage you to visit aboutcookies.org to learn more about how to opt out of cookies.
+
+<strong><u>Questions</strong></u>
+If you have any questions about this Cookie Policy, please contact us at lescramponnees@gmail.com
+
+<strong><u>Security:</strong></u>
+The security of your information is important to us and we will use reasonable security measures to prevent the loss, misuse or unauthorized alteration of your information under our control. However, given the inherent risks, we cannot guarantee absolute security and consequently, we cannot ensure or warrant the security of any information you transmit to us and you do so at your own risk. 
+ 
+<strong><u>Third Party Links & Use Of Your Information:</strong></u>
+Our Service may contain links to other websites that are not operated by us. This Privacy Policy does not address the privacy policy and other practices of any third parties, including any third party operating any website or service that may be accessible via a link on the Service. We strongly advise you to review the privacy policy of every site you visit. We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services. 
+ 
+<strong><u>Grievance / Data Protection Officer:</strong></u>
+The designated Privacy Officer for Les Cramponnées (OBNL) is Laura Mari. If you would like us to delete or correct specific personal information or report a privacy incident, please contact them by e-mail at lescramponnees@gmail.com.
+
+  </article>
+</main>
+
+<!-- Footer -->
+<footer class="bg-secondary-light py-6 text-center text-sm text-gray-800" data-aos="fade-up">
+  <p>
+    © 2025 Les Cramponnées. Tous droits réservés. 
+    <a href="politique-de-confidentialite.html" class="text-primary hover:underline ml-1">Politique de confidentialité</a>
+  </p>
+  <div class="flex justify-center gap-6 mt-4">
+    <a href="https://www.instagram.com/lescramponnees/" target="_blank" class="hover:text-primary" aria-label="Instagram Les Cramponnées">
+      <img src="icons8-instagram.svg" alt="Instagram Les Cramponnées Soccer féminin Montréal" class="inline h-6 w-6">
+    </a>
+    <a href="https://www.facebook.com/groups/lescramponnees" target="_blank" class="hover:text-primary" aria-label="Groupe Facebook Les Cramponnées">
+      <img src="icons8-facebook.svg" alt="Facebook Les Cramponnées Soccer féminin Montréal" class="inline h-6 w-6">
+    </a>
+  </div>
+</footer>
+
+<!-- Script menu mobile -->
+<script>
+  document.getElementById('menu-toggle')?.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.remove('hidden');
+  });
+  document.getElementById('close-menu')?.addEventListener('click', () => {
+    document.getElementById('mobile-menu')?.classList.add('hidden');
+  });
+  document.querySelectorAll('#mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobile-menu')?.classList.add('hidden');
+    });
+  });
+</script>
+
+</body>
+</html>
